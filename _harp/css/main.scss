@@ -61,30 +61,13 @@ small {
     }
   }
 }
-.switch-hats {
+.hats {
   float: left;
   display: inline-block;
   a {
     margin-right: 2em;
     line-height: 50px;
-    &.switch {
-      color: $body-text;
-      text-align: center;
-      padding-right: 2em;
-      border-right: 1px solid $middle-gray;
-      &:after {
-        font-family: icomoon;
-        content: '';
-        font-size: 0.66em;
-        padding-left: 0.66em;
-      }
-    }
   }
-}
-.navigation {
-  float: left;
-  display: inline-block;
-  line-height: 50px;
 }
 .account-actions {
   float: right;
@@ -92,30 +75,6 @@ small {
   line-height: 50px;
   a {
     margin-left: 1em;
-    &.user {
-      &:after {
-        font-family: icomoon;
-        content: '';
-        font-size: 0.66em;
-        padding-left: 0.66em;
-      }
-    }
-    &.inbox {
-      span {
-        display: none;
-      }
-      &:before {
-        display: inline-block;
-        font-family: icomoon;
-        color: $body-text;
-        content: '';
-        padding: 0.6em;
-        line-height: 1em;
-        text-align: center;
-        background-color: $white;
-        border-radius: 3px;
-      }
-    }
   }
 }
 .topbar {
@@ -192,14 +151,14 @@ small {
 }
 .level-up {
   font-size: 0.9em;
-}
-.level-up:before {
-  font-family: icomoon;
-  content: '';
-  display: inline-block;
-  width: 2.79em; // 2em / 0.8em / 0.9em
-  text-align: center;
-  font-size: 0.8em;
+  &:before {
+    font-family: icomoon;
+    content: '';
+    display: inline-block;
+    width: 2.79em; // 2em / 0.8em / 0.9em
+    text-align: center;
+    font-size: 0.8em;
+  }
 }
 .card {
   margin: 1em auto;
