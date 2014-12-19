@@ -1,8 +1,19 @@
-.switch-wrapper
-  .container.clearfix
-    .hats
-      a(href='').active Domestic
-      a(href='') Business
-    .account-actions
-      a(href='').user Tu Su Qing
-      a(href='') Sign out
+mixin switcher-mom-domestic
+  .switch-wrapper
+    .container.clearfix
+      .hats
+        a(href='mom-enquiries') MOM Officer
+        a(href='').active Domestic emplyer
+      .account-actions
+        a(href='').user Tu Su Qing
+        a(href='') Sign out
+
+mixin switcher-mom-officer
+  .switch-wrapper
+    .container.clearfix
+      .hats
+        a(href='').active MOM Officer
+        a(href='mom-domestic') Domestic emplyer
+      .account-actions
+        a(href='').user Tu Su Qing
+        a(href='') Sign out

@@ -55,20 +55,19 @@ small {
   position: relative;
 }
 .switch-wrapper {
-  font-size: 0.9em;
-  background-color: $light-gray;
+  font-size: 0.85em;
+  background-color: $body-text;
   font-weight: normal;
-  min-height: 50px;
   a {
-    color: $primary-blue;
+    color: $middle-gray;
     text-decoration: none;
     display: inline-block;
     &.active {
-      color: $body-text;
-      font-weight: bold;
+      color: $white;
+      border-bottom: 2px solid $white;
     }
     &:hover {
-      color: $body-text;
+      color: $white;
     }
   }
 }
@@ -77,15 +76,7 @@ small {
   display: inline-block;
   a {
     margin-right: 2em;
-    line-height: 50px;
-  }
-}
-.account-actions {
-  float: right;
-  display: inline-block;
-  line-height: 50px;
-  a {
-    margin-left: 1em;
+    padding: 0.6em 0;
   }
 }
 .topbar {
@@ -136,6 +127,7 @@ small {
   position: relative;
   z-index: 12;
   font-weight: normal;
+  font-size: 0.9em;
   line-height: 1em;
   a {
     display: inline-block;
@@ -154,6 +146,28 @@ small {
     &:hover {
       color: $primary-blue;
     }
+    &.breadcrumb {
+      margin-right: 0;
+      &:after {
+        font-family: icomoon;
+        content: '';
+        font-size: 0.7em;
+        display: inline-block;
+        color: $dark-gray;
+        width: 4em;
+        text-align: center;
+      }
+    }
+  }
+}
+.primary-nav {
+  float: left;
+}
+.secondary-nav {
+  float: right;
+  a {
+    margin-right: 0;
+    margin-left: 2em;
   }
 }
 .main-content {

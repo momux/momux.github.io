@@ -1,24 +1,39 @@
 mixin menubar-splash
   .menu-wrapper
-    .container
-      a(href='').active Home
-
+    .container.clearfix
+      .primary-nav
+        a(href='').active Home
+      .secondary-nav
+        a(href='') Tu Su Qing
+        a(href='sign-out') Sign out
+        
 mixin menubar-mom
   .menu-wrapper
     .container
-      a(href='mom-index') Home
+      a(href='mom-index').breadcrumb Home
       a(href='').active Enquiries
 
 mixin menubar-mom-domestic
   .menu-wrapper
-    .container
-      a(href='mom-index') Home
-      a(href='').active Your helpers
-      a(href='mom-levy') Levy
+    .container.clearfix
+      .primary-nav
+        a(href='mom-index').breadcrumb Home
+        a(href='').active Your helpers
+        a(href='mom-levy') Levy
+      .secondary-nav
+        a(href='inbox') Inbox
+        a(href='') Tu Su Qing
+        a(href='sign-out') Sign out
 
 mixin menubar-mom-levy
   .menu-wrapper
-    .container
-      a(href='mom-index') Home
-      a(href='mom-domestic') Your helpers
-      a(href='').active Levy
+    .container.clearfix
+      .primary-nav
+        a(href='mom-index').breadcrumb Home
+        a(href='mom-domestic') Your helpers
+        a(href='').active Levy
+      .secondary-nav
+        a(href='inbox') Inbox
+        a(href='') Tu Su Qing
+        a(href='sign-out') Sign out
+        

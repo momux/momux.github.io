@@ -1,6 +1,19 @@
-.main-content
-  .card
-    .card-heading
-      h1 Scenarios
-    .card-body
-      a(href='mom-index') MOM/CPF officer with helper
+#main-wrapper
+
+  include partials/_topbar
+  include partials/_menubar
+  
+  +menubar-splash
+
+  .main-content
+    .card
+      .card-heading
+        h1 Sandbox
+      .card-body
+        ul
+          li
+            a(href='poor-mans') Poor man’s styleguide
+          li
+            a(href='mom-index') MOM/CPF officer with helper
+
+  include partials/_footer
