@@ -1,0 +1,22 @@
+#main-wrapper
+  include partials/_topbar
+  include partials/_menubar
+  include partials/_helper-profile
+
+  +menubar-splash
+
+  .main-content.tiles
+    a(href='mom-enquiries')
+      .card.tile
+        .card-body
+          .icon-enquiries
+          h1 Enquiries
+          p.light Look up employer levy details
+    a(href='mom-domestic')
+      .card.tile
+        .card-body
+          .icon-domestic
+          h1 Domestic
+          p.light View and pay your helper’s levy
+
+  include partials/_footer

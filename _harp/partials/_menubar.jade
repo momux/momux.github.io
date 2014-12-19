@@ -1,5 +1,24 @@
-.menu-wrapper
-  .container
-    a(href='').active Your helpers
-    a(href='') Levy
-    a(href='').right Inbox
+mixin menubar-splash
+  .menu-wrapper
+    .container
+      a(href='').active Home
+
+mixin menubar-mom
+  .menu-wrapper
+    .container
+      a(href='mom-index') Home
+      a(href='').active Enquiries
+
+mixin menubar-mom-domestic
+  .menu-wrapper
+    .container
+      a(href='mom-index') Home
+      a(href='').active Your helpers
+      a(href='mom-levy') Levy
+
+mixin menubar-mom-levy
+  .menu-wrapper
+    .container
+      a(href='mom-index') Home
+      a(href='mom-domestic') Your helpers
+      a(href='').active Levy
