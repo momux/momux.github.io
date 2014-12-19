@@ -31,7 +31,7 @@ h1 {
   font-weight: 300;
   margin: 0;
   padding: 0;
-  //text-transform: uppercase;
+  text-transform: uppercase;
   & + p {
     margin-top: 1em;
   }
@@ -244,5 +244,55 @@ small {
     &:hover {
       color: $white;
     }
+  }
+}
+.left-column {
+  float: left;
+  display: inline-block;
+  width: 74%;
+}
+
+.sidebar {
+  padding: 1em;
+  display: inline-block;
+  float: right;
+  width: 20%;
+  background-color: yellow;
+  border: 5px dotted red;
+  a {
+    text-decoration: underline;
+  }
+  ul {
+    li {
+      margin-bottom: 1em;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+dl {
+  margin-bottom: 1em;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  dt {
+    text-transform: uppercase;
+    font-size: 0.85em;
+    color: $dark-gray;
+    float: left;
+    width: 30%;
+    line-height: 1.8em;
+  }
+  dd {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.2em;
+  }
+}
+
+.identity-documents, .insurance {
+  h3 {
+    margin: 1em 0;
   }
 }
